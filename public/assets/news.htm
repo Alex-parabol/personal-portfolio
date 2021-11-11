@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+<head itemscope itemtype="http://schema.org/WebSite">
+    <meta itemprop="name" content="IONOS Digital Guide"/>
+    <script src="//cdn.ionos.de/dgsg/9c2134ba72b4/499e488bab80/launch-59f3a3c442fa.min.js" async></script>
+
+<meta charset="utf-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2019 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+<base href="https://www.ionos.es/digitalguide/">
+
+
+<meta name="generator" content="TYPO3 CMS">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="meta-category" content="Digitalguide">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="robots" content="index,follow">
+
+
+<link rel="stylesheet" type="text/css" href="typo3temp/assets/compressed/font-awesome.min-e1be78ca47f6b461b9648bae2b328c32.css.gzip?1634210014" media="all">
+<link rel="stylesheet" type="text/css" href="typo3temp/assets/compressed/merged-84f3d64b421a48bf4f4bbee53150d2ec-42d27e894b2bc341f2bfebe0337fc437.css.gzip?1634210014" media="all">
+
+
+<script src="typo3temp/assets/compressed/merged-2309b1a88353daedcf867a0db8826da4-2303f7a172a0f44a3eade389c322f44c.js.gzip?1594253890" type="text/javascript"></script>
+<script src="typo3temp/assets/compressed/merged-b5af1b952c534a8811c773fd5d258fbf-ec8cb554345b33312ec2cbc8dc4e7c4e.js.gzip?1634210014" type="text/javascript"></script>
+
+
+<link rel="stylesheet" type="text/css" media="all"  href="https://www.ionos.es/digitalguide/typo3conf/ext/ratgeberportal/Resources/Public/Css/cookie-styling-dark-bottom.css" />
+      <link rel="shortcut icon" href="/favicon.ico" /><link rel="canonical" href="https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="es" href="https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="es-ES" href="https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="en-GB" href="https://www.ionos.co.uk/digitalguide/server/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="en" href="https://www.ionos.com/digitalguide/server/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="en-US" href="https://www.ionos.com/digitalguide/server/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="en-CA" href="https://www.ionos.ca/digitalguide/server/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="fr" href="https://www.ionos.fr/digitalguide/serveur/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="fr-FR" href="https://www.ionos.fr/digitalguide/serveur/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="es-MX" href="https://www.ionos.mx/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="it-IT" href="https://www.ionos.it/digitalguide/server/know-how/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="de-AT" href="https://www.ionos.at/digitalguide/server/knowhow/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="de" href="https://www.ionos.de/digitalguide/server/knowhow/nntp-network-news-transfer-protocol/"><link rel="alternate" hreflang="de-DE" href="https://www.ionos.de/digitalguide/server/knowhow/nntp-network-news-transfer-protocol/">
+	<title>NNTP: ¿qué es el Network News Transfer Protocol? - IONOS</title>
+	<meta name="description" content="Los usuarios de la Usenet conocen muy bien el Network News Transfer Protocol (NNTP). ¿Qué significa NNTP exactamente y cómo funciona?" />
+	
+<meta property="og:title" content="NNTP: ¿qué es exactamente el Network News Transfer Protocol?">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://www.ionos.es/digitalguide/fileadmin/DigitalGuide/Teaser/google-news-t.jpg">
+<meta property="og:url" content="https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/">
+<meta property="og:site_name" content="IONOS Digitalguide">
+<meta property="og:description" content="Los usuarios de la Usenet conocen muy bien el Network News Transfer Protocol (NNTP). ¿Qué significa NNTP exactamente y cómo funciona?">
+<meta property="og:locale" content="es_ES">
+<script type="text/javascript">
+        var cookieContent = '';
+        var params = document.location.search;
+
+        if (params.indexOf('ac') != -1) {
+          var regExp = new RegExp(/ac=([a-z0-9.]*)/i);
+          var matches = params.match(regExp);
+
+          if (matches != null && matches.length > 0) {
+              cookieContent = matches[1];
+          }
+        }
+        else {
+            var referrer = document.referrer;
+            var cookieValueSearchEngine = 'OM.WE.WEo50K361688T7073a';
+            var cookieValueOther = 'OM.WE.WEd32K41385T7073a';
+
+            if (referrer != '') {
+                var re = new RegExp(/^http[s]?:\/\/(www\.)?(google|bing|yahoo|duckduckgo|ecosia|ask.com|t-online|myway|qwant|such.web.de|gmx.net|startpage.com|msn.com|yandex)/i);
+                var matches = referrer.match(re);
+
+                cookieContent = (matches != null && matches.length > 0) ? cookieValueSearchEngine : cookieValueOther;
+            }
+        }
+        var cookieName = 'ac-whorder-es';
+        if(document.cookie.indexOf(cookieName) == -1 && cookieContent != '') {
+            var thirtyDaysFromNow = Date.now() + (86400000 * 90);
+            var expiresDate = new Date(thirtyDaysFromNow).toUTCString(); 
+            var cookieSettings = '; expires=' + expiresDate + '; path=/';
+            document.cookie = cookieName + '=' + cookieContent + cookieSettings;
+        }
+        </script>
+</head>
+<body class="see-drop page-2554">
+
+
+<div id="wrapper">
+
+	
+	<header id="header"><div class="header-holder"><div class="container"><div class="logo"><a href="/digitalguide/"><span class="text">Digital Guide</span><div class="img-logo rb"><img src="fileadmin/templates/images/ionos_logo.svg" alt="IONOS"></div></a></div><nav id="nav"><a href="#" class="nav-opener"><span></span></a><div class="nav-drop"><div class="nav-wrap"><ul id="navigation" class="navigation"><li ><a href="paginas-web/">Páginas web</a><div class="inner-drop hidden-drop"><div class="container"><ul><li ><a href="paginas-web/creacion-de-paginas-web/" title="Creación de páginas web">Creación de páginas web</a></li><li ><a href="paginas-web/diseno-web/" title="Diseño web">Diseño web</a></li><li ><a href="paginas-web/desarrollo-web/" title="Desarrollo web">Desarrollo web</a></li><li ><a href="paginas-web/derecho-digital/" title="Derecho  digital">Derecho  digital</a></li></ul></div></div></li><li ><a href="hosting/">Hosting</a><div class="inner-drop hidden-drop"><div class="container"><ul><li ><a href="hosting/cms/" title="CMS">CMS</a></li><li ><a href="hosting/blogs/" title="Blogs">Blogs</a></li><li ><a href="hosting/cuestiones-tecnicas/" title="Cuestiones técnicas">Cuestiones técnicas</a></li></ul></div></div></li><li class="inner-drop-active "><a href="servidores/">Servidores</a><div class="inner-drop"><div class="container"><ul><li ><a href="servidores/know-how/" title="Know How">Know How</a></li><li ><a href="servidores/configuracion/" title="Configuración">Configuración</a></li><li ><a href="servidores/seguridad/" title="Seguridad">Seguridad</a></li><li ><a href="servidores/herramientas/" title="Herramientas">Herramientas</a></li></ul></div></div></li><li ><a href="dominios/">Dominios</a><div class="inner-drop hidden-drop"><div class="container"><ul><li ><a href="dominios/extensiones-de-dominio/" title="Extensiones de dominio">Extensiones de dominio</a></li><li ><a href="dominios/gestion-de-dominios/" title="Gestión de dominios">Gestión de dominios</a></li><li ><a href="dominios/noticias-sobre-dominos/" title="Noticias sobre dominos">Noticias sobre dominos</a></li><li ><a href="dominios/consejos-sobre-dominios/" title="Consejos sobre dominios">Consejos sobre dominios</a></li></ul></div></div></li><li ><a href="online-marketing/">Online Marketing</a><div class="inner-drop hidden-drop"><div class="container"><ul><li ><a href="online-marketing/vender-en-internet/" title="Vender en Internet">Vender en Internet</a></li><li ><a href="online-marketing/marketing-para-motores-de-busqueda/" title="Marketing para motores de búsqueda">Marketing para motores de búsqueda</a></li><li ><a href="online-marketing/redes-sociales/" title="Redes sociales">Redes sociales</a></li><li ><a href="online-marketing/analisis-web/" title="Análisis web">Análisis web</a></li></ul></div></div></li><li ><a href="correo-electronico/">Correo electrónico</a><div class="inner-drop hidden-drop"><div class="container"><ul><li ><a href="correo-electronico/e-mail-marketing/" title="E-mail marketing">E-mail marketing</a></li><li ><a href="correo-electronico/seguridad-correo-electronico/" title="Seguridad correo electrónico">Seguridad correo electrónico</a></li><li ><a href="correo-electronico/cuestiones-tecnicas/" title="Cuestiones técnicas">Cuestiones técnicas</a></li></ul></div></div></li><li><a href="https://www.ionos.es">Productos IONOS</a><div class="inner-drop hidden-drop"><div class="container"><ul id="second-navigation" class="second-navigation"><li class="has-drop-down level2"><a title="dominios">Dominios</a><div class="level3"><div class="container"><ul><li><a href="https://www.ionos.es/dominios/dominios?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Dominios: Registra y compra ahora</a></li><li class="level"><a href="https://www.ionos.es/dominios/nuevas-terminaciones-dominios?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Nuevos nombres de Dominios</a></li><li class="level"><a href="https://www.ionos.es/dominios/transferencia-dominios?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Transferencia de Dominios</a></li><li class="level"><a href="https://www.ionos.es/dominios/registrar-dominio-privado?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Registro de dominio privado</a></li><li class="level"><a href="https://www.ionos.es/tools/whois-domain?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Información Whois</a></li><li class="level"><a href="https://www.ionos.es/dominios/domain-check?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Domain Check</a></li><li class="level"><a href="https://www.ionos.es/dominios/dominio-gratis?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Dominio gratis</a></li></ul></div></div></li><li class="has-drop-down level2"><a title="correooffice">Correo &amp; Office</a><div class="level3"><div class="container"><ul><li><a href="https://www.ionos.es/soluciones-oficina/correo?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Dirección de correo electrónico</a></li></ul></div></div></li><li class="has-drop-down level2"><a title="servidores">Servidores</a><div class="level3"><div class="container"><ul><li><a href="https://www.ionos.es/cloud/servidores-cloud?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Servidor Cloud</a></li><li class="level"><a href="https://www.ionos.es/servidores/servidores-dedicados?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Servidores Dedicados</a></li><li class="level"><a href="https://www.ionos.es/servidores/vps?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Servidores Virtuales</a></li><li class="level"><a href="https://www.ionos.es/servidores/servidores?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Servidores</a></li><li class="level"><a href="https://www.ionos.es/cloud-empresarial?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Cloud Empresarial</a></li></ul></div></div></li><li class="has-drop-down level2"><a title="seguridad">Seguridad</a><div class="level3"><div class="container"><ul><li><a href="https://www.ionos.es/seguridad/certificado-ssl?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Certificado SSL</a></li><li class="level"><a href="https://www.ionos.es/tools/ssl-checker?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">SSL Checker</a></li></ul></div></div></li><li class="has-drop-down level2"><a title="paginaswebhosting">Páginas Web &amp; Hosting</a><div class="level3"><div class="container"><ul><li><a href="https://www.ionos.es/pagina-web/crear-pagina-web?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Crea tu página web</a></li><li class="level"><a href="https://www.ionos.es/pagina-web/templates?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Plantillas web</a></li><li class="level"><a href="https://www.ionos.es/soluciones-ecommerce/tiendas-online?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Tiendas Online</a></li><li class="level"><a href="https://www.ionos.es/alojamiento/linux-hosting?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Hosting Linux</a></li><li class="level"><a href="https://www.ionos.es/alojamiento/hosting-wordpress?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">WordPress Hosting</a></li><li><a href="https://www.ionos.es/alojamiento/windows-hosting?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Windows Hosting</a></li></ul></div></div></li><li class="has-drop-down level2"><a title="herramientas">Herramientas</a><div class="level3"><div class="container"><ul><li><a href="https://www.ionos.es/tools/analisis-web?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Análisis Web</a></li><li class="level"><a href="https://www.ionos.es/tools/analisis-seo?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Análisis SEO</a></li><li class="level"><a href="https://www.ionos.es/tools/crear-favicon?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Crear favicon</a></li><li class="level"><a href="https://www.ionos.es/tools/crear-logo?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">Crear logo</a></li><li class="level"><a href="https://www.ionos.es/tools/direccion-ip?ac=OM.WE.WEo50K421511T7073a" class="has-drop-down-c">¿Cual es mi IP?</a></li><li class="level"><a href="https://phishing-contact.ionos.es/es/" class="has-drop-down-c">Servicio de Validación</a></li></ul></div></div></li></ul></div></div></li></ul></div></div></nav><div class="header-info"><ul class="list-inline list-links"><li><div class="dropdown search-box"><a href="#" class="search-opener dropdown-toggle" data-toggle="dropdown"><span class="icon-search"></span></a><div class="search-drop dropdown-menu"><form class="search-form" action="buscar/" method="post"><fieldset><div class="form-group"><input class="form-control" type="search" placeholder="Buscar" name="search"><button type="submit"><span class="icon-search"></span></button></div></fieldset></form></div></div></li><li class="sub-drop-opener dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									Productos IONOS</a><div class="sub-drop-wrap dropdown-menu"><div class="container"><div class="row"><div class="col-sm-3"><strong class="sub-head">
+        
+            Dominios
+        
+    </strong><ul class="sub-menu-list list-unstyled"><li><a href="https://www.ionos.es/dominios/dominios?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Dominios: Registra y compra ahora</strong><p></p></a></li><li><a href="https://www.ionos.es/dominios/nuevas-terminaciones-dominios?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Nuevos nombres de Dominios</strong><p> Más de 400 nuevas terminaciones de dominio</p></a></li><li><a href="https://www.ionos.es/dominios/transferencia-dominios?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Transferencia de Dominios</strong><p> Transfiere tu dominio fácilmente</p></a></li><li><a href="https://www.ionos.es/dominios/registrar-dominio-privado?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Registro de dominio privado</strong><p> Dominio con privacidad WHOIS incluido gratis</p></a></li><li><a href="https://www.ionos.es/dominios/dominio-gratis?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Dominio gratis</strong><p></p></a></li><li><a href="https://www.ionos.es/tools/whois-domain?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Información Whois</strong><p> Busca información sobre un dominio</p></a></li><li><a href="https://www.ionos.es/dominios/domain-check?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Domain Check</strong><p></p></a></li></ul><strong class="sub-head">
+        
+            Seguridad
+
+        
+    </strong><ul class="sub-menu-list list-unstyled"><li><a href="https://www.ionos.es/seguridad/certificado-ssl?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Certificado SSL</strong><p> Máxima Seguridad con accesso https</p></a></li><li><a href="https://www.ionos.es/tools/ssl-checker?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">SSL Checker</strong><p> Comprueba gratis de tu cifrado HTTPS</p></a></li></ul></div><div class="col-sm-3"><strong class="sub-head">
+        
+            Páginas Web &amp; Hosting
+
+        
+    </strong><ul class="sub-menu-list list-unstyled"><li><a href="https://www.ionos.es/pagina-web/crear-pagina-web?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Crea tu página web</strong><p> Crea fácilmente la página web de tu negocio</p></a></li><li><a href="https://www.ionos.es/pagina-web/templates?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Plantillas web</strong><p> Múltiples diseños y gran variedad de plantillas</p></a></li><li><a href="https://www.ionos.es/soluciones-ecommerce/tiendas-online?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Tiendas Online</strong><p> Crea tu propia tienda online rápidamente</p></a></li><li><a href="https://www.ionos.es/alojamiento/alojamiento-web?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Hosting</strong><p> Alojamiento web para profesionales</p></a></li><li><a href="https://www.ionos.es/alojamiento/linux-hosting?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Hosting Linux</strong><p> La elección ideal para Apache, PHP y MySQL</p></a></li><li><a href="https://www.ionos.es/alojamiento/hosting-wordpress?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">WordPress Hosting</strong><p> Hosting profesional para WordPress</p></a></li><li><a href="https://www.ionos.es/alojamiento/windows-hosting?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Windows Hosting</strong><p> Alojamiento web para asp</p></a></li></ul><strong class="sub-head">
+        
+            Correo &amp; Office
+
+        
+    </strong><ul class="sub-menu-list list-unstyled"><li><a href="https://www.ionos.es/soluciones-oficina/correo?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Dirección de correo electrónico</strong><p> Correo electrónico profesional</p></a></li><li><a href="https://www.ionos.es/soluciones-oficina/microsoft-office?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Microsoft 365</strong><p> Trabajar de forma más productiva</p></a></li></ul></div><div class="col-sm-3"><strong class="sub-head">
+        
+            Servidores
+
+        
+    </strong><ul class="sub-menu-list list-unstyled"><li><a href="https://www.ionos.es/cloud/servidores-cloud?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Servidor Cloud</strong><p> Soluciones de cloud hosting y respaldo</p></a></li><li><a href="https://www.ionos.es/servidores/servidores-dedicados?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Servidores Dedicados</strong><p> Hosting dedicado en España: Windows o Linux</p></a></li><li><a href="https://www.ionos.es/servidores/vps?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Servidores Virtuales</strong><p> Servidor Virtual Privado al mejor precio</p></a></li><li><a href="https://www.ionos.es/cloud-empresarial?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Cloud Empresarial</strong><p> Cloud IaaS altamente escalable y configurable de manera individual</p></a></li></ul></div><div class="col-sm-3"><strong class="sub-head">
+        
+            Herramientas
+
+        
+    </strong><ul class="sub-menu-list list-unstyled"><li><a href="https://www.ionos.es/tools/analisis-web?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Análisis Web</strong><p> Análisis del rendimiento de tu página web</p></a></li><li><a href="https://www.ionos.es/tools/analisis-seo?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Análisis SEO</strong><p> Comprueba gratis si tu sitio web está optimizada</p></a></li><li><a href="https://www.ionos.es/tools/crear-favicon?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Crear favicon</strong><p> Crea tu favicon gratis en linea</p></a></li><li><a href="https://www.ionos.es/tools/crear-logo?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">Crear logo</strong><p> Generador de logos para tu negocio</p></a></li><li><a href="https://www.ionos.es/tools/direccion-ip?ac=OM.WE.WEo50K421451T7073a"><strong class="sub-title">¿Cual es mi IP?</strong><p> Descubre tu direccion IP gratis </p></a></li><li><a href="https://phishing-contact.ionos.es/es/"><strong class="sub-title">Servicio de Validación</strong><p> Comprobar la autenticidad de un correo de IONOS </p></a></li></ul></div></div></div></div></li></ul></div></div></div></header>
+	<main id="main">
+		<script type="application/ld+json">{ "@context": "http://schema.org","@type": "BreadcrumbList", "itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.ionos.es","name":"IONOS"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.ionos.es\/digitalguide","name":"Consejero"}},{"@type":"ListItem","position":3,"item":{"@id":"servidores\/","name":"Servidores"}},{"@type":"ListItem","position":4,"item":{"@id":"servidores\/know-how\/","name":"Know How"}},{"@type":"ListItem","position":5,"item":{"@id":"servidores\/know-how\/nntp-network-news-transfer-protocol\/","name":"NNTP - Network News Transfer Protocol"}}]}</script><nav class="breadcrumbs"><div class="container"><ol class="list-inline"><li><a href="/" title="IONOS" itemprop="item">IONOS</a></li><li><a href="" title="Digitalguide" itemprop="item"><span itemprop="name">Digitalguide</span></a></li><li><a href="servidores/" title="Servidores" itemprop="item"><span itemprop="name">Servidores</span></a></li><li><a href="servidores/know-how/" title="Know How" itemprop="item"><span itemprop="name">Know How</span></a></li><li><a href="servidores/know-how/nntp-network-news-transfer-protocol/" title="NNTP - Network News Transfer Protocol" itemprop="item"><span itemprop="name">NNTP - Network News Transfer Protocol</span></a></li></ol></div></nav>
+		<div class="main-container">
+			<div class="container meta-holder"><div class="row"><div class="col-sm-8"><div class="article-meta"><ul class="list-inline meta"><li><time datetime=" 2020-09-18"><span class="icon-clock-o"></span>  18.09.20</time></li><li><a href="servidores/know-how/">Know How</a></li></ul><ul class="list-inline list-info"><li><!--
+    
+            
+<div class="star-rating"><div class="star-rating__text"><span class="text-info"
+             data-role="ratingsWording"
+              data-default="¿Te ha gustado el artículo?"
+             data-thanks="Muchas gracias por tu valoración">
+            ¿Te ha gustado el artículo?
+        </span><span class="star-rating__average" title="Nota promedio"
+             data-role="ratingsAverage">
+            0
+        </span></div><div class="star-rating__wrap"><input class="star-rating__input" id="star-rating-5" type="radio" name="ratingtop" value="5"
+               data-role="ratingStarInput5"><label class="star-rating__ico" for="star-rating-5" data-role="star" data-amount="5"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label><input class="star-rating__input" id="star-rating-4" type="radio" name="ratingtop" value="4"
+               data-role="ratingStarInput4"><label class="star-rating__ico" for="star-rating-4" data-role="star" data-amount="4"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label><input class="star-rating__input" id="star-rating-3" type="radio" name="ratingtop" value="3"
+               data-role="ratingStarInput3"><label class="star-rating__ico" for="star-rating-3" data-role="star" data-amount="3"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label><input class="star-rating__input" id="star-rating-2" type="radio" name="ratingtop" value="2"
+               data-role="ratingStarInput2"><label class="star-rating__ico" for="star-rating-2" data-role="star" data-amount="2"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label><input class="star-rating__input" id="star-rating-1" type="radio" name="ratingtop" value="1"
+               data-role="ratingStarInput1"><label class="star-rating__ico" for="star-rating-1" data-role="star" data-amount="1"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label></div><div class="star-rating__amount" data-role="ratingTotalAmount"
+         title="Total de reseñas">0
+    </div><div class="clearfix"></div></div>
+
+            
+        
+    --></li><li><ul class="list-inline social-networks"><li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/" class="facebook"><span class="icon-facebook"></span></a></li><li><a target="_blank" href="https://twitter.com/intent/tweet?source=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/&text=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/%20%23DigitalGuide" class="twitter"><span class="icon-twitter"></span></a></li><li><a target="_blank" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/" class="xing"><span class="icon-xing"></span></a></li><li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/" class="linkedin"><span class="icon-linkedin"></span></a></li></ul></li></ul></div></div></div></div>
+			
+
+
+
+
+			<div class="container two-columns 	">
+			<div class="row">
+				<!--TYPO3SEARCH_begin-->
+				
+						<div class="col-sm-8" id="content"><div class="content-block"><div class="aligncenter visual-img hidden-xs"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="fileadmin/_processed_/e/5/csm_google-news-t_2852dfc610.jpg" media="(max-width: 767px)"><source srcset='fileadmin/_processed_/e/5/csm_google-news-t_3f2197955f.jpg' media="(max-width: 1023px)"><source srcset='fileadmin/DigitalGuide/Teaser/google-news-t.jpg'><!--[if IE 9]></video><![endif]--><img src="fileadmin/DigitalGuide/Teaser/google-news-t.jpg" alt="NNTP - Network News Transfer Protocol" title="NNTP - Network News Transfer Protocol" loading="lazy"></picture></div><div id="c268217" class="frame frame-default frame-type-header frame-layout-0"><header><h1 class="blue">NNTP: ¿qué es exactamente el Network News Transfer Protocol?</h1></header></div><div id="c268218"><div class="text-row ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>A principios de la década de los 80, mucho antes de que se creara la World Wide Web, se creó una plataforma mundial para el intercambio de información, llamada <strong>Usenet</strong> (originalmente UNIX User Network), que sigue existiendo hoy en día como un <strong>servicio</strong> de Internet independiente paralelo a la Web. Los <strong>grupos de noticias</strong> o <em>newsgroups</em>, como se denominan las áreas temáticas individuales de Usenet, han perdido mucha relevancia en las últimas décadas con la aparición de nuevos puntos de encuentro digitales, como <a href="paginas-web/creacion-de-paginas-web/crear-un-foro-aprende-como-hacerlo/" title="Crear un foro: aprende cómo hacerlo">foros</a> o <a href="online-marketing/redes-sociales/las-redes-sociales-mas-utilizadas/" title="Las redes sociales más utilizadas">redes sociales</a>.</p><p>Sin embargo, la estructura jerárquica de Usenet, basada en el clásico intercambio de mensajes cliente-servidor, tiene un enorme valor histórico. Esto es razón más que suficiente para echar un vistazo al NNTP (Network News Transfer Protocol), que es esencial para la<strong> comunicación entre servidores de noticias individuales y clientes.</strong></p></div></div></div><div id="c268219" class="frame frame-default frame-type-list frame-layout-0"><div class="tx-toc"><div id="toc" class="toc content-table smoothscroll 
+         numbers 
+          
+          
+         
+         togglestyle"><div id="toctitle" class="opener"><strong class="h3">Índice</strong><span class="toctoggle"><a href="#" id="togglelinkStyle"></a></span></div><ol class="ordered-list list-content toclist hierarchy"><li class="toclevel-2"><a href="servidores/know-how/nntp-network-news-transfer-protocol/#c268220"><span class="toctext" data-slug="-iquest-que-significa-nntp-">¿Qué significa NNTP?</span></a></li><li class="toclevel-2"><a href="servidores/know-how/nntp-network-news-transfer-protocol/#c268222"><span class="toctext" data-slug="-iquest-para-que-se-utiliza-el-protocolo-nntp-">¿Para qué se utiliza el protocolo NNTP?</span></a></li><li class="toclevel-2"><a href="servidores/know-how/nntp-network-news-transfer-protocol/#c268223"><span class="toctext" data-slug="-iquest-como-funciona-el-network-news-transfer-protocol-">¿Cómo funciona el Network News Transfer Protocol?</span></a></li><li class="toclevel-2"><a href="servidores/know-how/nntp-network-news-transfer-protocol/#c268226"><span class="toctext" data-slug="nntp-ejemplo-de-transmision-de-mensajes">NNTP: ejemplo de transmisión de mensajes</span></a></li><li class="toclevel-2"><a href="servidores/know-how/nntp-network-news-transfer-protocol/#c268228"><span class="toctext" data-slug="resumen-de-los-comandos-de-nntp-y-codigos-de-estado">Resumen de los comandos de NNTP y códigos de estado</span></a></li></ol></div></div></div><div id="c268220"><h2 class="blue">¿Qué significa NNTP?</h2><div class="text-row ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>El Network News Transfer Protocol, también conocido como NNTP, es un protocolo <strong>de transferencia TCP/IP</strong> para mensajes en grupos de noticias o <em>newsgroups</em>. Estos grupos de noticias se utilizan principalmente en el contexto de la llamada Usenet, una especie de antepasado de los modernos foros de Internet, y son puntos de encuentro que permiten el intercambio de un número ilimitado de <strong>mensajes de texto</strong> sobre una amplia variedad de temas. La primera especificación del protocolo NNTP, registrada en <a href="https://tools.ietf.org/html/rfc977" title="RFC 977 – Network News Transfer Procotol" target="_blank">RFC 977</a> data del<strong> año 1986</strong>. Desde entonces, el protocolo ha pasado por varias revisiones. La <strong>versión actual</strong> se encuentra en <a href="https://tools.ietf.org/html/rfc3977" title="RFC 3977 – Network News Transfer Protocol (NNTP)" target="_blank">RFC 3977</a>. Desde 2009, existe con <a href="https://tools.ietf.org/html/rfc5536" title="RFC 5536 – Netnews Article Format" target="_blank">RFC 5536</a>, además, una <em>Request for Comments</em> que especifica el formato del mensaje de la transmisión NNTP con mayor precisión.</p></div></div></div><div class="info-box orange"><div id="c268221"><div class="headline h2 blue title"><i class="fa fa-exclamation"></i> Nota</div><div class=" ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>Hasta el desarrollo y lanzamiento del NNTP, la transmisión de datos en Usenet tenía lugar a través de líneas telefónicas usando el protocolo UNIX <strong>UUCP</strong> (Unix to Unix Copy).</p></div></div></div></div><div id="c268222"><h2 class="blue">¿Para qué se utiliza el protocolo NNTP?</h2><div class="text-row ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>Hoy en día, el NNTP ha perdido mucha relevancia en la comunicación digital, lo que está relacionado con el hecho de que la propia <strong>Usenet</strong> ya solo se utiliza esporádicamente y en círculos especializados. Desde 1986, el Network News Transfer Protocol ha sido un elemento indispensable para la red de información y se <strong>utiliza tanto en el lado del servidor como en el del cliente</strong>. Aparte de la transmisión de <strong>mensajes directos personales,</strong> Usenet se caracteriza por los <strong>grupos de noticias</strong> ya mencionados, que pueden crearse y gestionarse individualmente mediante el NNTP protocol. De este modo, a lo largo del tiempo numerosos subgrupos de noticias se han integrado en la jerarquía básica existente de la Usenet.</p></div></div></div><div class="info-box orange"><div id="c268234"><div class="headline h2 blue title"><i class="fa fa-exclamation"></i> Nota</div><div class=" ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>Los <strong>ocho temas principales de Usenet</strong>, también conocidos como Big Eight o Big-8 (<em>los</em>&nbsp; <em>grandes&nbsp; 8</em>) son los siguientes:</p><p><strong>- comp</strong>: Ordenadores.</p><p><strong>- sci</strong>: Ciencia y tecnología.</p><p><strong>- soc</strong>: Sociedad.</p><p><strong>- talk</strong>: Temas generales.</p><p><strong>- rec</strong>: Temas relacionados con el ocio, la recreación, el arte y la cultura.</p><p><strong>- noticias</strong>: Información y noticias sobre la propia Usenet.</p><p><strong>- misc</strong>: Miscelánea.</p><p><strong>- humanities</strong>: Humanidades, Asuntos Culturales.</p></div></div></div></div><div id="c268223"><h2 class="blue">¿Cómo funciona el Network News Transfer Protocol?</h2><div class="text-row ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>El NNTP es un protocolo <strong>basado en texto</strong> y permite la transmisión de datos alterna entre el cliente y el servidor: por cada solicitud de NNTP se espera una respuesta del NNTP. Para esta comunicación, la IANA (Internet Assigned Numbers Authority) ha previsto el <strong>puerto TCP 119</strong>, que en este caso está reservado únicamente para este protocolo de comunicación. Una red TCP/IP como Internet es, por lo tanto, la estructura subyacente para la plataforma de información. El protocolo NNTP, que a su vez funciona en la capa de aplicación, se basa directamente en el <a href="servidores/know-how/que-es-tcp-transport-control-protocol/" title="Qué es TCP (Transport Control Protocol)">protocolo TCP</a>, que tiene la ventaja de garantizar una<strong> transmisión de datos segura</strong> y fiable.</p><p>El concepto básico de Usenet establece que un mensaje nuevo enviado desde un cliente NNTP a cualquier servidor NNTP se <strong>mantiene en ese servidor.</strong> Todos los demás clientes que deseen participar en la conversación pueden <strong>descargar ese mensaje o artículo</strong> en cualquier momento para mantenerse al día de ese grupo de noticias. Esto quiere decir que, si un cliente se conecta a un servidor NNTP, descarga primero todos los mensajes que se han publicado desde la última conexión a ese servidor. Por lo tanto, cuanto más tiempo haya estado desconectado el cliente, más tiempo durará el <strong>proceso de actualización</strong> al establecer la conexión.</p></div></div></div><div class="info-box orange"><div id="c268224"><div class="headline h2 blue title"><i class="fa fa-exclamation"></i> Nota</div><div class=" ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>Cuando un servidor recibe un <strong>nuevo mensaje</strong> a través del Network News Transfer Protocol, añade un <strong>ID de mensaje único</strong> a ese mensaje o artículo. Este tiene el formato &quot;&lt;<em>número consecutivo@News-server&gt;&quot;</em> y se utiliza para la <strong>identificación</strong> inequívoca y para la <strong>recuperación</strong> y <strong>referencia</strong> si otros clientes o usuarios desean reaccionar o responder con su propio mensaje.</p></div></div></div></div><div id="c268225"><div class="text-row ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>Asimismo, con el fin de distribuir los nuevos mensajes en toda la red de Usenet, los servidores individuales reenvían los mensajes recibidos a todos los demás servidores del NNTP que conozcan. Antes de hacerlo, añaden su propio nombre al <strong><em>path-header</em> o cabecera del mensaje NNTP</strong> para no volver a recibirlo.</p></div></div></div><div id="c268226"><h2 class="blue">NNTP: ejemplo de transmisión de mensajes</h2><div class="text-row ce-textpic ce-center ce-below"><div class="ce-bodytext"><p>Después de haberte explicado los fundamentos del Network News Transfer Protocol en las secciones anteriores, te mostramos un ejemplo concreto de comunicación entre los clientes y los servidores. El <strong>punto de partida es el Cliente 1</strong>, que introduce un nuevo mensaje o artículo en Usenet:</p></div><div class="aligncenter ce-gallery" data-ce-columns="1" data-ce-images="1"><div class="ce-outer"><div class="ce-inner"><div class="ce-row"><div class="ce-column"><figure><a href="fileadmin/DigitalGuide/Screenshots_2020/EN-NNTP.png" data-lightbox="60800" data-title="Diagrama de intercambio de mensajes NNTP"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="fileadmin/_processed_/2/0/csm_EN-NNTP_09e5ed3c4e.png" media="(max-width: 767px)"><source srcset='fileadmin/_processed_/2/0/csm_EN-NNTP_fc885022d9.png' media="(max-width: 1023px)"><source srcset='fileadmin/DigitalGuide/Screenshots_2020/EN-NNTP.png'><!--[if IE 9]></video><![endif]--><img  src="fileadmin/DigitalGuide/Screenshots_2020/EN-NNTP.png" alt="Diagrama de intercambio de mensajes NNTP" title="Diagrama de intercambio de mensajes NNTP" loading="lazy"></picture></a><figcaption class="img-caption">Aquí se muestra un intercambio de mensajes ejemplar mediante Network News Transfer Protocol: también sería posible, por ejemplo, que todos los clientes obtuvieran la información del servidor NNTP 1.</figcaption></figure></div></div></div></div></div></div></div><div id="c268227"><div class="text-row ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>Los pasos individuales de la transmisión del mensaje, que aparecen en este diagrama, se pueden resumir así:</p><ol><li>El usuario del <strong>Cliente NNTP 1</strong> escribe un nuevo mensaje (o artículo) y envía estos datos al servidor NNTP 1.</li><li>El <strong>Servidor 1 de NNTP</strong> proporciona al mensaje un ID de mensaje único y añade su nombre a la cabecera. Este conoce al Servidor NNTP 2 y al servidor NNTP 3 y reenvía el mensaje a ambos.</li><li>El <strong>Servidor NNTP 2</strong> recibe el mensaje e inserta su nombre en la cabecera. El <strong>Servidor NNTP 3</strong> recibe también el mensaje, añade su nombre a la cabecera, y reenvía el mensaje al servidor 4 de NNTP, que conoce.</li><li>El <strong>Servidor NNTP 4</strong> recibe y procesa este mensaje. Después, añade su propio nombre a la cabecera. Después, contacta con el servidor 5, que conoce, y le envía los datos.</li><li><strong>El Servidor NNTP 5</strong> añade su identificación a la cabecera. Entonces, evalúa las entradas de la cabecera y por lo tanto no intenta reenviar el mensaje a los servidores 2 y 3, aunque los conoce (las flechas rojas significan que se omite el envío).</li><li>Tan pronto como están en línea, los <strong>clientes</strong> recogen el mensaje de su servidor personal de noticias. Por ejemplo, el Cliente NNTP 2 recibe la información directamente del servidor 1, mientras que el Cliente 6 la recibe del Servidor 4.</li></ol></div></div></div><div id="c268228"><h2 class="blue">Resumen de los comandos de NNTP y códigos de estado</h2><div class="text-row ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>Los clientes y los servidores utilizan comandos <strong>ASCII</strong> para comunicarse con el protocolo NNTP. De este modo, con cada solicitud de NNTP, un cliente envía automáticamente uno de estos comandos. El servidor responde con un mensaje de estado y envía los datos solicitados al cliente. Los <strong>comandos más importantes para la comunicación NNTP</strong> aparecen en esta tabla:</p></div></div></div><div id="c268229"><div class="text-row"><div class="table-wrap"><table class="table info-table"><thead><tr><th><span>
+				Comando NNTP
+			</span></th><th><span>
+				Función
+			</span></th></tr></thead><tbody><tr><td data-label="Comando NNTP"><span>
+				LIST
+			</span></td><td data-label="Función"><span>
+				Solicita una lista de los grupos de noticias disponibles (incluyendo el primer y último número de artículo)
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				NEWGROUPS
+			</span></td><td data-label="Función"><span>
+				Consulta todos los nuevos grupos disponibles
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				NEWNEWS
+			</span></td><td data-label="Función"><span>
+				Consulta todos los nuevos artículos disponibles creados a partir de una fecha determinada
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				GROUP
+			</span></td><td data-label="Función"><span>
+				Especifica el grupo al que se realiza la solicitud
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				ARTICLE
+			</span></td><td data-label="Función"><span>
+				Permite consultar un mensaje específico mediante su número en el grupo o su ID de mensaje
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				HEADER
+			</span></td><td data-label="Función"><span>
+				Solicita solo la cabecera de un artículo
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				BODY
+			</span></td><td data-label="Función"><span>
+				Solicita solo el cuerpo de un artículo
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				STAT
+			</span></td><td data-label="Función"><span>
+				Es necesario para especificar el ID de mensaje de un artículo
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				NEXT
+			</span></td><td data-label="Función"><span>
+				Selecciona el siguiente artículo en el grupo de noticias
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				POST
+			</span></td><td data-label="Función"><span>
+				Informa al servidor que se está enviando un nuevo mensaje o artículo
+			</span></td></tr><tr><td data-label="Comando NNTP"><span>
+				QUIT
+			</span></td><td data-label="Función"><span>
+				Corta la conexión con el servidor NNTP
+			</span></td></tr></tbody></table></div></div></div><div id="c268230"><div class="text-row ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>El mensaje de estado que el servidor devuelve como respuesta NNTP (incluyendo los datos solicitados) es un <strong>código numérico de tres cifras</strong>. La <strong>primera cifra</strong> se interpreta de la siguiente manera:</p></div></div></div><div id="c268231"><div class="text-row"><div class="table-wrap"><table class="table info-table"><thead><tr><th><span>
+				Código de estado del servidor de NNTP
+			</span></th><th><span>
+				Significado
+			</span></th></tr></thead><tbody><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				1xx
+			</span></td><td data-label="Significado"><span>
+				Información general
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				2xx
+			</span></td><td data-label="Significado"><span>
+				Comando recibido, ejecución completada
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				3xx
+			</span></td><td data-label="Significado"><span>
+				Comando recibido, se requiere más información
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				4xx
+			</span></td><td data-label="Significado"><span>
+				Comando recibido, ejecución no completada
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				5xx
+			</span></td><td data-label="Significado"><span>
+				Comando desconocido
+			</span></td></tr></tbody></table></div></div></div><div id="c268232"><div class="text-row ce-textpic ce-center ce-above"><div class="ce-bodytext"><p>En la <strong>segunda cifra del código numérico</strong> se transmite la siguiente información:</p></div></div></div><div id="c268233"><div class="text-row"><div class="table-wrap"><table class="table info-table"><thead><tr><th><span>
+				Código de estado del servidor de NNTP
+			</span></th><th><span>
+				Significado
+			</span></th></tr></thead><tbody><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				x0x
+			</span></td><td data-label="Significado"><span>
+				Información sobre la conexión, la configuración u otros datos
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				x1x
+			</span></td><td data-label="Significado"><span>
+				Información sobre un grupo de noticias seleccionado
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				x2x
+			</span></td><td data-label="Significado"><span>
+				Información sobre artículos seleccionados
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				x3x
+			</span></td><td data-label="Significado"><span>
+				Información sobre transferencia de mensajes
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				x4x
+			</span></td><td data-label="Significado"><span>
+				Información sobre los artículos enviados
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				x5x
+			</span></td><td data-label="Significado"><span>
+				Respuesta de autenticación
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				x8x
+			</span></td><td data-label="Significado"><span>
+				Mensaje para comandos añadidos no estandarizados
+			</span></td></tr><tr><td data-label="Código de estado del servidor de NNTP"><span>
+				x9x
+			</span></td><td data-label="Significado"><span>
+				Mensaje de depuración
+			</span></td></tr></tbody></table></div></div></div><div class="article-meta"><ul class="list-inline meta"><li><time datetime=" 2020-09-18"><span class="icon-clock-o"></span>  18.09.20</time></li><li><a href="servidores/know-how/">Know How</a></li></ul><ul class="list-inline list-info"><li><!--
+    
+            
+<div class="star-rating"><div class="star-rating__text"><span class="text-info"
+             data-role="ratingsWording"
+              data-default="¿Te ha gustado el artículo?"
+             data-thanks="Muchas gracias por tu valoración">
+            ¿Te ha gustado el artículo?
+        </span><span class="star-rating__average" title="Nota promedio"
+             data-role="ratingsAverage">
+            0
+        </span></div><div class="star-rating__wrap"><input class="star-rating__input" id="star-rating-5" type="radio" name="ratingbottom" value="5"
+               data-role="ratingStarInput5"><label class="star-rating__ico" for="star-rating-5" data-role="star" data-amount="5"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label><input class="star-rating__input" id="star-rating-4" type="radio" name="ratingbottom" value="4"
+               data-role="ratingStarInput4"><label class="star-rating__ico" for="star-rating-4" data-role="star" data-amount="4"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label><input class="star-rating__input" id="star-rating-3" type="radio" name="ratingbottom" value="3"
+               data-role="ratingStarInput3"><label class="star-rating__ico" for="star-rating-3" data-role="star" data-amount="3"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label><input class="star-rating__input" id="star-rating-2" type="radio" name="ratingbottom" value="2"
+               data-role="ratingStarInput2"><label class="star-rating__ico" for="star-rating-2" data-role="star" data-amount="2"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label><input class="star-rating__input" id="star-rating-1" type="radio" name="ratingbottom" value="1"
+               data-role="ratingStarInput1"><label class="star-rating__ico" for="star-rating-1" data-role="star" data-amount="1"><span class="fa fa-stack fa-lg"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span></label></div><div class="star-rating__amount" data-role="ratingTotalAmount"
+         title="Total de reseñas">0
+    </div><div class="clearfix"></div></div>
+
+        
+    --></li><li><ul class="list-inline social-networks"><li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/" class="facebook"><span class="icon-facebook"></span></a></li><li><a target="_blank" href="https://twitter.com/intent/tweet?source=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/&text=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/%20%23DigitalGuide" class="twitter"><span class="icon-twitter"></span></a></li><li><a target="_blank" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/" class="xing"><span class="icon-xing"></span></a></li><li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ionos.es/digitalguide/servidores/know-how/nntp-network-news-transfer-protocol/" class="linkedin"><span class="icon-linkedin"></span></a></li></ul></li></ul></div><ul class="metatags-list list-inline list-unstyled"><li><a title="Protocolos" href="tags/protocolos/">Protocolos</a></li></ul></div><section class="container related-articles"><strong class="h3 text-center">Artículos similares</strong><div class="row post-holder"><div class="col-sm-4"><article class="info-post"><div class="img-holder"><a title="¿Qué es StartTLS?" href="correo-electronico/cuestiones-tecnicas/que-es-starttls/"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="fileadmin/_processed_/4/7/csm_starttls_cfafa56172.jpg" media="(max-width: 767px)"><source srcset='fileadmin/_processed_/4/7/csm_starttls_22c08d8447.jpg' media="(max-width: 1023px)"><source srcset='fileadmin/DigitalGuide/Teaser/starttls.jpg'><!--[if IE 9]></video><![endif]--><img src="fileadmin/DigitalGuide/Teaser/starttls.jpg" alt="¿Qué es StartTLS?" title="¿Qué es StartTLS?" loading="lazy"></picture></a></div><h2 class="blue"><a title="StartTLS: cifrado de correo sin puertos" href="correo-electronico/cuestiones-tecnicas/que-es-starttls/">StartTLS: cifrado de correo sin puertos</a></h2><ul class="list-inline meta"><li><time datetime="2019-04-15"><span class="icon-clock-o"></span> 15.04.2019</time></li><li><a href="correo-electronico/cuestiones-tecnicas/">Cuestiones técnicas</a></li></ul><p>
+        StartTLS utiliza el protocolo TLS para cifrar el correo electrónico. Para ello se ha de consultar al servidor si soporta StartTLS. Aceptado el procedimiento, el comando StartTLS resulta práctico porque el cifrado se produce automáticamente sin necesidad de conectarse a un puerto específico, ya que se puede utilizar con cualquier aplicación. No obstante, esto esconde riesgos, como los temidos...
+    </p><div class="social-block"><ul class="list-inline social-networks"><li><a target="_blank" href='https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.es/digitalguide/correo-electronico/cuestiones-tecnicas/que-es-starttls/' class="facebook"><span class="icon-facebook"></span></a></li><li><a target="_blank" href="https://twitter.com/intent/tweet?source=https://www.ionos.es/digitalguide/correo-electronico/cuestiones-tecnicas/que-es-starttls/&text=https://www.ionos.es/digitalguide/correo-electronico/cuestiones-tecnicas/que-es-starttls/%20%23DigitalGuide" class="twitter"><span class="icon-twitter"></span></a></li><li><a target="_blank" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.es/digitalguide/correo-electronico/cuestiones-tecnicas/que-es-starttls/" class="xing"><span class="icon-xing"></span></a></li><li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ionos.es/digitalguide/correo-electronico/cuestiones-tecnicas/que-es-starttls/" class="linkedin"><span class="icon-linkedin"></span></a></li></ul></div></article></div><div class="col-sm-4"><article class="info-post"><div class="img-holder"><a title="Puertos TCP Puertos UDP" href="servidores/know-how/puertos-tcp-puertos-udp/"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="fileadmin/_processed_/3/4/csm_ports-t_105de23584.jpg" media="(max-width: 767px)"><source srcset='fileadmin/_processed_/3/4/csm_ports-t_463acb5f60.jpg' media="(max-width: 1023px)"><source srcset='fileadmin/DigitalGuide/Teaser/ports-t.jpg'><!--[if IE 9]></video><![endif]--><img src="fileadmin/DigitalGuide/Teaser/ports-t.jpg" alt="Puertos TCP Puertos UDP" title="Puertos TCP Puertos UDP" loading="lazy"></picture></a></div><h2 class="blue"><a title="Puertos TCP/UDP: lista de los puertos importantes" href="servidores/know-how/puertos-tcp-puertos-udp/">Puertos TCP/UDP: lista de los puertos importantes</a></h2><ul class="list-inline meta"><li><time datetime="2020-07-08"><span class="icon-clock-o"></span> 08.07.2020</time></li><li><a href="servidores/know-how/">Know How</a></li></ul><p>
+        Los protocolos regulan la comunicación por internet. Para que los paquetes de datos puedan entrar en los sistemas y salir de estos, hay que abrir puertas. Estas reciben el nombre de puertos y representan un aspecto muy importante de internet. Existen más de 65 000 puertos TCP y UDP disponibles. Se dividen en well-known ports, registered ports y otros variables. ¿Cuáles son importantes? 
+    </p><div class="social-block"><ul class="list-inline social-networks"><li><a target="_blank" href='https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.es/digitalguide/servidores/know-how/puertos-tcp-puertos-udp/' class="facebook"><span class="icon-facebook"></span></a></li><li><a target="_blank" href="https://twitter.com/intent/tweet?source=https://www.ionos.es/digitalguide/servidores/know-how/puertos-tcp-puertos-udp/&text=https://www.ionos.es/digitalguide/servidores/know-how/puertos-tcp-puertos-udp/%20%23DigitalGuide" class="twitter"><span class="icon-twitter"></span></a></li><li><a target="_blank" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.es/digitalguide/servidores/know-how/puertos-tcp-puertos-udp/" class="xing"><span class="icon-xing"></span></a></li><li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ionos.es/digitalguide/servidores/know-how/puertos-tcp-puertos-udp/" class="linkedin"><span class="icon-linkedin"></span></a></li></ul></div></article></div><div class="col-sm-4"><article class="info-post"><div class="img-holder"><a title="TCP/IP" href="servidores/know-how/tcpip/"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="fileadmin/_processed_/f/f/csm_tcp-ip-t_5fba47b9b7.jpg" media="(max-width: 767px)"><source srcset='fileadmin/_processed_/f/f/csm_tcp-ip-t_294748fdd0.jpg' media="(max-width: 1023px)"><source srcset='fileadmin/DigitalGuide/Teaser/tcp-ip-t.jpg'><!--[if IE 9]></video><![endif]--><img src="fileadmin/DigitalGuide/Teaser/tcp-ip-t.jpg" alt="TCP/IP" title="TCP/IP" loading="lazy"></picture></a></div><h2 class="blue"><a title="TCP/IP: el protocolo que hace posible Internet" href="servidores/know-how/tcpip/">TCP/IP: el protocolo que hace posible Internet</a></h2><ul class="list-inline meta"><li><time datetime="2020-03-11"><span class="icon-clock-o"></span> 11.03.2020</time></li><li><a href="servidores/know-how/">Know How</a></li></ul><p>
+        Los protocolos TCP/IP te permiten leer este texto. TCP e IP, los dos protocolos que dan nombre a la familia, pero también otros reglamentos relacionados, sirven para establecer cómo se debe desarrollar la comunicación por Internet y otras redes. Los estándares están tan asentados que todos los dispositivos siguen los protocolos para garantizar un transporte de datos sin complicaciones. 
+    </p><div class="social-block"><ul class="list-inline social-networks"><li><a target="_blank" href='https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.es/digitalguide/servidores/know-how/tcpip/' class="facebook"><span class="icon-facebook"></span></a></li><li><a target="_blank" href="https://twitter.com/intent/tweet?source=https://www.ionos.es/digitalguide/servidores/know-how/tcpip/&text=https://www.ionos.es/digitalguide/servidores/know-how/tcpip/%20%23DigitalGuide" class="twitter"><span class="icon-twitter"></span></a></li><li><a target="_blank" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.es/digitalguide/servidores/know-how/tcpip/" class="xing"><span class="icon-xing"></span></a></li><li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ionos.es/digitalguide/servidores/know-how/tcpip/" class="linkedin"><span class="icon-linkedin"></span></a></li></ul></div></article></div><div class="col-sm-4"><article class="info-post"><div class="img-holder"><a title="PPPoE – Point-to-Point Protocol over Ethernet" href="servidores/know-how/pppoe-point-to-point-protocol-over-ethernet/"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="fileadmin/_processed_/5/9/csm_ethernet-t_79942d73f3.jpg" media="(max-width: 767px)"><source srcset='fileadmin/_processed_/5/9/csm_ethernet-t_1b4f92f558.jpg' media="(max-width: 1023px)"><source srcset='fileadmin/DigitalGuide/Teaser/ethernet-t.jpg'><!--[if IE 9]></video><![endif]--><img src="fileadmin/DigitalGuide/Teaser/ethernet-t.jpg" alt="PPPoE – Point-to-Point Protocol over Ethernet" title="PPPoE – Point-to-Point Protocol over Ethernet" loading="lazy"></picture></a></div><h2 class="blue"><a title="PPPoE: protocolo para DNS" href="servidores/know-how/pppoe-point-to-point-protocol-over-ethernet/">PPPoE: protocolo para DNS</a></h2><ul class="list-inline meta"><li><time datetime="2020-09-23"><span class="icon-clock-o"></span> 23.09.2020</time></li><li><a href="servidores/know-how/">Know How</a></li></ul><p>
+        ¿Cómo te conectas a Internet? Si tienes una conexión DSL, cada vez que quieres hacerlo, tu ordenador contacta en primer lugar con el punto de interconexión del proveedor de Internet. Desde ese punto se comprueban tus derechos de acceso y se establece la conexión. Para que esto funcione, se utiliza el Point-to-Point Protocol over Ethernet (PPPoE), pero ¿cómo opera exactamente este protocolo?  
+    </p><div class="social-block"><ul class="list-inline social-networks"><li><a target="_blank" href='https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.es/digitalguide/servidores/know-how/pppoe-point-to-point-protocol-over-ethernet/' class="facebook"><span class="icon-facebook"></span></a></li><li><a target="_blank" href="https://twitter.com/intent/tweet?source=https://www.ionos.es/digitalguide/servidores/know-how/pppoe-point-to-point-protocol-over-ethernet/&text=https://www.ionos.es/digitalguide/servidores/know-how/pppoe-point-to-point-protocol-over-ethernet/%20%23DigitalGuide" class="twitter"><span class="icon-twitter"></span></a></li><li><a target="_blank" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.es/digitalguide/servidores/know-how/pppoe-point-to-point-protocol-over-ethernet/" class="xing"><span class="icon-xing"></span></a></li><li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ionos.es/digitalguide/servidores/know-how/pppoe-point-to-point-protocol-over-ethernet/" class="linkedin"><span class="icon-linkedin"></span></a></li></ul></div></article></div><div class="col-sm-4"><article class="info-post"><div class="img-holder"><a title="NTLM" href="servidores/know-how/ntlm/"><picture><!--[if IE 9]><video style="display: none;"><![endif]--><source srcset="fileadmin/_processed_/e/4/csm_NTLM-t_8e542a5d7e.jpg" media="(max-width: 767px)"><source srcset='fileadmin/_processed_/e/4/csm_NTLM-t_2b651669c6.jpg' media="(max-width: 1023px)"><source srcset='fileadmin/DigitalGuide/Teaser/NTLM-t.jpg'><!--[if IE 9]></video><![endif]--><img src="fileadmin/DigitalGuide/Teaser/NTLM-t.jpg" alt="NTLM" title="NTLM" loading="lazy"></picture></a></div><h2 class="blue"><a title="NTLM: ¿cómo funciona el protocolo de autenticación?" href="servidores/know-how/ntlm/">NTLM: ¿cómo funciona el protocolo de autenticación?</a></h2><ul class="list-inline meta"><li><time datetime="2020-09-16"><span class="icon-clock-o"></span> 16.09.2020</time></li><li><a href="servidores/know-how/">Know How</a></li></ul><p>
+        El protocolo NTLM fue una solución práctica para los dispositivos Windows durante mucho tiempo: iniciando sesión una sola vez, el usuario podía acceder a varios servicios de la red. Sin embargo, actualmente este método de autenticación se considera inseguro y, por lo tanto, ya no se utiliza. ¿Cómo funciona NTLM, y por qué ha sido desbancado por Kerberos? 
+    </p><div class="social-block"><ul class="list-inline social-networks"><li><a target="_blank" href='https://www.facebook.com/sharer/sharer.php?u=https://www.ionos.es/digitalguide/servidores/know-how/ntlm/' class="facebook"><span class="icon-facebook"></span></a></li><li><a target="_blank" href="https://twitter.com/intent/tweet?source=https://www.ionos.es/digitalguide/servidores/know-how/ntlm/&text=https://www.ionos.es/digitalguide/servidores/know-how/ntlm/%20%23DigitalGuide" class="twitter"><span class="icon-twitter"></span></a></li><li><a target="_blank" href="https://www.xing.com/spi/shares/new?url=https://www.ionos.es/digitalguide/servidores/know-how/ntlm/" class="xing"><span class="icon-xing"></span></a></li><li><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.ionos.es/digitalguide/servidores/know-how/ntlm/" class="linkedin"><span class="icon-linkedin"></span></a></li></ul></div></article></div></div></section><div class="category-description"></div></div>
+					
+
+
+				<!--TYPO3SEARCH_end-->
+				
+						<div class="col-sm-4" id="sidebar">
+
+							
+									
+									
+<div id="c188864" class="frame frame-default frame-type-html frame-layout-0"><div class="sidebar-sticky-box"><h3>Productos asociados</h3><div class="row"><div class="col-xs-12 sidebar-sticky-box-inhalt"><div class="col-xs-4"><img alt="Servidores Cloud" src="https://ce1.uicdn.net/889/8ebfb443dde969405943625e94889/hosting-common/vi-cloud-server.svg"></div><div class="sidebar-sticky-box-text" class="col-xs-8">Servidores Cloud</div></div></div><button class="btn btn-primary btn-block button-dg" type="button" target="_blank" onclick="websiteSBSitecat();window.open('https://www.ionos.es/cloud/servidores-cloud?ac=OM.WE.WEo50K361642T7073a')" role="button">Ver tarifas <span class="icon-triangle-right"></span></button></div><script type="text/javascript">
+function websiteSBSitecat(){
+    if (typeof window.s === "object" && typeof window.s.apl === 'function' && typeof window.s.t === 'function') {
+       s.events2=s.apl(s.events2, "event114", ",", 1);
+       s.t(s);
+   }
+}
+</script></div>
+
+
+								
+
+							
+<div id="c188894" class="frame frame-default frame-type-html frame-layout-0"><div class="reseller-box"><h3>Hosting para agencias</h3><p class="">Ofrece un servicio fiable y de alto rendimiento a tus clientes con un pack hosting de IONOS.</p><button class="btn btn-primary btn-block button-dg" type="button" target="_blank" onclick="globalSBSitecat();window.open('https://www.ionos.es/colaboradores/hosting-para-agencias?ac=OM.WE.WEo50K361688T7073a#packs')" role="button">Ver packs <span class="icon-triangle-right"></span></button></div><script type="text/javascript">
+function globalSBSitecat(){
+    if (typeof window.s === "object" && typeof window.s.apl === 'function' && typeof window.s.t === 'function') {
+       s.events2=s.apl(s.events2, "event113", ",", 1);
+       s.t(s);
+   }
+}
+</script></div>
+
+
+
+						<div class="side-block open-close" id="popular-articles"><h3 class="opener" data-responsive-accordion="1023">
+                Artículos Favoritos
+                <span class="iconCloseOpen "></span></h3><div class="container-info-blog slide"><div class="info-blog"><h4 class="h5 blue"><a title="Crear páginas web de peluquerías" href="paginas-web/creacion-de-paginas-web/crear-paginas-web-de-peluquerias/">Crear páginas web de peluquerías
+                                        <p class=shabstract>A continuación, te mostramos cómo puedes crear una página web profesional para tu peluquería de forma rápida, económica y sencilla...</span></p></a></h4></div><div class="info-blog"><h4 class="h5 blue"><a title="La página web de una agencia inmobiliaria" href="paginas-web/creacion-de-paginas-web/la-pagina-web-de-una-agencia-inmobiliaria/">La página web de una agencia inmobiliaria
+                                        <p class=shabstract>La página web de tu inmobiliaria se convierte, así, en un factor clave para destacar frente a tus competidores...</span></p></a></h4></div><div class="info-blog"><h4 class="h5 blue"><a title="Crear una página web de reformas" href="paginas-web/creacion-de-paginas-web/crear-una-pagina-web-de-reformas/">Crear una página web de reformas
+                                        <p class=shabstract>Con las herramientas adecuadas, podrás crear fácilmente una página web conforme a la ley...</span></p></a></h4></div><div class="info-blog"><h4 class="h5 blue"><a title="Crear la página web de una clínica dental" href="paginas-web/creacion-de-paginas-web/crear-la-pagina-web-de-una-clinica-dental/">Crear la página web de una clínica dental
+                                        <p class=shabstract>Una página web para tu clínica dental ayuda a tus futuros pacientes a encontrarte fácilmente y a hacerse una idea de los servicios que ofreces...</span></p></a></h4></div><div class="info-blog"><h4 class="h5 blue"><a title="Página web de fotógrafo" href="paginas-web/creacion-de-paginas-web/crear-paginas-web-para-fotografos/">Página web de fotógrafo
+                                        <p class=shabstract>Conoce los componentes principales de una página web para fotógrafos y cómo conseguir el mayor número de visitas posible...</span></p></a></h4></div></div></div>
+			</div>
+			
+		</div>
+		</div>
+		<div class="mobile-box"></div>
+		<div class="container info-aside"></div>
+		</div>
+	</main>
+
+<footer id="footer">
+	<div class="container footer-frame">
+		<ul class="list-inline social-networks contact">
+			
+				<li><a href="http://ionos.ly/IONOS_FB_ES" class="facebook" target="_blank"><span class="icon-facebook"></span></a></li>
+			
+			
+				<li><a href="http://ionos.ly/IONOS_TW_ES" class="twitter" target="_blank"><span class="icon-twitter"></span></a></li>
+			
+			
+			
+				<li><a href="http://ionos.ly/IONOS_YT_ES" class="youtube" target="_blank"><img src="fileadmin/templates/images/youtube.png" width="28" height="28" alt="youtube"></a></li>
+			
+			
+				<li><a href="http://ionos.ly/IONOS_IN" class="linkedin" target="_blank"><span class="icon-linkedin"></span></a></li>
+			
+			
+			
+				<li><a href="rss-feeds/rss-digitalguide/feed.rss" class="rss-feed" style="background:#ffffff" target="_blank"><img src="fileadmin/rss-feed.png" width="28" height="28" alt="rss-feed"></a></li>
+			
+		</ul>
+	</div>
+
+	<div class="footer-holder">
+		<div class="container">
+			<ul class="list-inline list-footer"><li class="footer-nav-item"><a href="https://www.ionos.es/empresa" class="footer-nav-link" target="_blank">Empresa</a></li><li class="footer-nav-item"><a href="https://www.ionos.es/cookies" class="footer-nav-link" target="_blank">Uso de Cookies</a></li><li class="footer-nav-item"><a href="https://www.ionos.es/terms-gtc/terms-privacy" class="footer-nav-link" target="_blank">Privacidad</a></li><li class="footer-nav-item"><a href="https://www.ionos.es/ayuda" class="footer-nav-link" target="_blank">Centro de Ayuda</a></li><li class="footer-nav-item"><span class="footer-nav-copyright">&copy; 2021  <a href="https://www.ionos.es" title="1&1 IONOS" target="_blank">1&1 IONOS España S.L.U.</a></span></li></ul>
+		</div>
+	</div>
+	<a href="#wrapper" class="btn btn-top" style="display: block; opacity: 1;"><span class="icon-angle-up"></span></a>
+
+</footer>
+
+</div>
+
+  <script>
+    window.cookieconsent_options = {
+      learnMore: 'Política de Cookies.',
+      dismiss: 'OK',
+      message: 'Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso. Puede obtener más información, o bien conocer cómo cambiar la configuración de su navegador en nuestra',
+      link: 'https://www.ionos.es/cookies',
+      
+    };
+  </script>
+
+
+<div id="bio_ep">
+<div id="c188967" class="frame frame-default frame-type-html frame-layout-0"><div class="popup-header"><img src="fileadmin/templates/images/ionos_logo.svg" alt="IONOS" width="50" height="50"></div><br/><h2 class="exit-intent" style="padding-right:0px; font-size: 35px;">¡No te vayas! ¡Tenemos algo para ti!
+ <br>Consigue tu dominio .es un año gratis.</h2><div class="exit-sub">Introduce el dominio que deseas en la barra de búsqueda para comprobar su disponibilidad.</div><div class="exit-sub exit-sub-offer">12 meses desde 0€/año IVA incl.</div><div class="exit-sub sub-sub">después 10 €/año IVA incl.</div><div class="domaincheck-wrap"><div class="col-right"><form action="https://ionos.es/dcjump" class="innerform" method="GET" target="_blank"><input name="ac" value="OM.WE.WEo50K361597T7073a" style="display:none"><input placeholder="Introduce tu dominio" class="domaincheckinput" name="domain" type="text"><button type="submit" class="btn btn-primary" onclick="domainCheckSitecat()">Comprobar</button></form></div><form class="direct-link-form" onclick="shopSitecat();window.open('https://www.ionos.es/dominios/dominios?ac=OM.WE.WEo50K361597T7073a','_blank')"><button type="submit" class="btn btn-primary" >Ver tienda</button></form></div><style>
+#bio_ep {
+    background-image: url(./fileadmin/user_upload/Stage_Domain.png);
+}
+</style><script type="text/javascript">
+  function domainCheckSitecat(){
+       if (typeof window.s === "object" && typeof window.s.apl === 'function' && typeof window.s.t === 'function') {
+       s.events2=s.apl(s.events2, "event120", ",", 1);
+       s.t(s);
+       }
+  }
+  function shopSitecat(){
+    if (typeof window.s === "object" && typeof window.s.apl === 'function' && typeof window.s.t === 'function') {
+       s.events2=s.apl(s.events2, "event121", ",", 1);
+       s.t(s);
+        }
+  }
+</script></div>
+
+</div>
+<script src="typo3temp/assets/compressed/merged-b12e9bc4199c6e7595c76378b47ba8cd-6017b34c75527ed376b58927ca464b23.js.gzip?1634210014" type="text/javascript"></script>
+<script src="typo3temp/assets/compressed/merged-665221b7814d2052790839ebf75f4f53-f0e9db32875f7354cf73c3a0c156766c.js.gzip?1634210014" type="text/javascript"></script>
+
+<script type="text/javascript">_satellite.pageBottom();</script><div class="tx-cisositecatalyst">
+		
+            <!-- SiteCatalyst code version: H.20.3. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+            <script type="text/javascript">var s_account="iaglive";</script>
+            <script type="text/javascript" src="typo3conf/ext/ciso_sitecatalyst/Resources/Public/JavaScript/s_code.js"></script>
+            <script type="text/javascript" src="typo3conf/ext/ciso_sitecatalyst/Resources/Public/JavaScript/utm.js"></script>
+            
+                    <script language="JavaScript" type="text/javascript">
+                        function onRequest(data) {
+                            s.server = "";
+s.visitorNamespace = "1und1internetag";
+s.thisHost = window.location.host;
+s.currencyCode = "EUR";
+s.charSet = "UTF-8";
+s.trackDownloadLinks = true;
+s.trackExternalLinks = true;
+s.trackInlineStats = true;
+s.linkDownloadFileTypes = "exe,zip,wav,mp3,mov,mpg,avi,wmv,pdf,doc,docx,xls,xlsx,ppt,pptx";
+s.linkInternalFilters = "javascript:,.1und1.de,.1und1.at,.1and1.com,.1and1.ca,.1and1.co.uk,.1and1.es,.1and1.fr,.1and1.pl,.1and1.it,.1und1.info,.1and1.mx,.gmx.de,.web.de,united.domain,cinetic.de,schlund.de,.ionos.ca,.ionos.de,.ionos.at,.ionos.es,.ionos.fr,.ionos.it,.ionos.mx,.ionos.co.uk,.ionos.com,"+s.thisHost;
+s.linkLeaveQueryString = false;
+s.linkTrackVars = "None";
+s.linkTrackEvents = "None";
+s.usePlugins = true;
+s.prop11 = "New contract shop";
+s.eVar13 = "New contract shop";
+s.channel = "digitalguide";
+var cookieName = "ac-whorder-es";
+var searchString = document.location.search;
+// removing the '?' at the beginning
+if (searchString.length > 0) {
+  searchString = searchString.substring(1);
+}
+var searchStringParts = searchString.split('&');
+var actionCode = '';
+for (var i=0, j=searchStringParts.length; i<j; i++) {
+  if (searchStringParts[i].search('ac') != -1) {
+    // getting the value by removing the 'ac=' at the beginning
+    actionCode = searchStringParts[i].substring(3);
+  }
+}
+
+// if the actionCode is not in the URL check for the cookie
+if (typeof $.cookie != "undefined" && actionCode == '' && typeof $.cookie(cookieName) != "undefined") {
+  actionCode = $.cookie(cookieName);
+}
+
+if (actionCode != '') {
+  s.campaign = s.eVar23 = actionCode;
+}
+s.prop1 = "servidores_know-how_nntp-network-news-transfer-protocol";
+s.prop5 = "dg-server";
+s.prop6 = "dg-es";
+s.prop7 = "www.ionos.es";
+s.prop17 = "es";
+s.prop23 = window.navigator.userAgent;
+s.eVar1 = "digitalguide";
+s.eVar2 = "servidores_know-how_nntp-network-news-transfer-protocol";
+var currentDate = new Date();
+var day = currentDate.getDate();
+var formattedDay = day <= 9 ? "0" + day : day;
+var month = currentDate.getMonth();
+var formattedMonth = month <= 8 ? "0" + (month + 1) : (month + 1);
+var year = currentDate.getFullYear();
+var hours = currentDate.getHours();
+var formattedHours = hours <= 9 ? "0" + (hours) : hours;
+var minutes = currentDate.getMinutes();
+var formattedMinutes = minutes <= 9 ? "0" + (minutes) : minutes;
+
+var timeStamp = formattedDay + "/" + formattedMonth + "/" + year + "-" + formattedHours + ":" + formattedMinutes;
+s.eVar3 = timeStamp;
+s.eVar6 = "dg-server";
+s.eVar7 = "dg-es";
+s.eVar45 = "es";
+                        }
+                        $(window).ready(function() {
+
+                          window.setTimeout(function(){ 
+                              if (typeof window.PrivacyConsent !== "undefined")
+                              {
+                                  // we use the available variable defined by Adpbe DTM script
+                                  if (typeof window.privacyConsentInstance === "undefined") {
+                                    window.privacyConsentInstance = new PrivacyConsent({ whitelist: true });
+                                  }
+                                  
+                                  window.privacyConsentInstance.invoke(
+                                    function() {
+                                        var existingScriptElement = document.getElementsByTagName("script")[0];
+                                        var scriptElement = document.createElement("script");
+                                        scriptElement.type = "text/javascript";
+                                        scriptElement.src = "typo3conf/ext/ciso_sitecatalyst/Resources/Public/JavaScript/s_code.js";
+                                        scriptElement.onload = function() {
+                                            onRequest();
+                                            
+                                            var s_code=s.t();
+                                            if (s_code) document.write(s_code);
+                                        };
+                                        existingScriptElement.parentNode.insertBefore(scriptElement, existingScriptElement);
+                                    },
+                                    PrivacyConsentEnum.STATISTICS,
+                                    this,
+                                    true
+                                  );
+                                  
+                                  window.privacyConsentInstance.initialize();
+                              } else {
+                                // send the tracking for the page
+                                onRequest();
+    
+                                var s_code=s.t();
+                                if (s_code) document.write(s_code);
+                              }
+                          
+                          }, 2000);                         
+                
+                        });
+                </script>
+            <script type="text/javascript"><!--; if (navigator.appVersion.indexOf("MSIE")>=0) document.write(unescape("%3C")+"\!-"+"-"); //--></script>
+            <noscript>
+                <p><a href="http://www.omniture.com" title="Web Analytics"><img src="" height="1" width="1" alt="" /></a></p>
+            </noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.20.3. -->
+            
+	</div>
+	
+<script type="text/javascript">
+   var page = 'NNTP - Network News Transfer Protocol';
+   var pageId = '3';
+   var application = 'T3.DG.ES';
+</script>
+<script type="text/javascript" src="typo3conf/ext/ciso_tracking/Resources/Public/Scripts/performance/browser.js"></script>
+
+<script type="text/javascript" src="typo3conf/ext/ciso_tracking/Resources/Public/Scripts/performance/rum.js"></script>
+
+
+<script type="text/javascript">
+UNOUNO = window.UNOUNO || {};
+UNOUNO.tracking = UNOUNO.tracking || {};
+
+
+UNOUNO.tracking.genericTracking = function(siteCatalystParams, type, name, optFullSet) {
+  /*
+    use this API to track specific events independend from page related tracking
+    uses cases for this can be tracking a survey, a clicked link or search related tracking
+  */
+
+  /*
+    here is one code example of how to track events with SiteCatalyst
+    UNOUNO.tracking.genericTracking makes it possible to use a standardized API for all kinds of such tracking codes
+
+    Example (original code):
+
+    var s=s_gi('iagdev');
+    s.linkTrackVars='events,products';
+    s.linkTrackEvents='event7,event8,event9,event10,event11,event12';
+    s.events='event7,event8,event9,event10,event11,event12';
+    s.products=";;;;event7=25|event8=75|event9=100|event10=0|event11=1";
+    s.tl(this,'o','Linkname');
+
+    Standardized UNOUNO.tracking.genericTracking example:
+
+    UNOUNO.tracking.genericTracking({
+
+      events: 'event7,event8,event9,event10,event11,event12',
+
+      products: ';;;;event7=25|event8=75|event9=100|event10=0|event11=1'
+
+    });
+
+    See wiki for complete API: http://wiki.intranet.1and1.com/bin/view/UE/SitecatalystTracking#Tracking_Events
+
+  */
+
+  var s, key, linkTrackVars, linkTrackEvents;
+
+  if (typeof s_gi !== 'undefined' && typeof s_account !== 'undefined') {
+
+    // s_account is triggered by tag manager script and has values iagdev or iaglive
+
+    s = s_gi(s_account);
+
+    // generate linkTrackVars based on siteCatalystParams
+
+    linkTrackVars = '';
+    /* transactionId  */
+    
+    if ((typeof siteCatalystParams["list2"] != "undefined" && siteCatalystParams["list2"].indexOf("chat-angenommen") == 0  || typeof siteCatalystParams["prop60"] != "undefined" && siteCatalystParams["prop60"].indexOf("ct.btn.MobileZubehoerShop") > -1) && typeof siteCatalystParams["eVar35"] == "undefined"){
+      siteCatalystParams["eVar35"] = UNOUNO.tracking.transactionId;
+    }
+
+    for (key in siteCatalystParams) {
+
+      if (siteCatalystParams.hasOwnProperty(key)) {
+
+        linkTrackVars = linkTrackVars + key + ',';
+
+        if (key === 'events') {
+
+          // if the special param events is used, generate an additionally linkTrackEvents property
+
+          linkTrackEvents = siteCatalystParams[key];
+
+        }
+
+      }
+
+    }
+
+    if (linkTrackVars !== '') {
+
+      // remove trailing comma
+
+      linkTrackVars = linkTrackVars.substr(0, linkTrackVars.length - 1);
+
+      // server time in every request
+      linkTrackVars += ",eVar3";
+      
+      // copy generated linkTrackVars and optional linkTrackEvents to the s object
+      s.linkTrackVars = linkTrackVars;
+
+      if (linkTrackEvents) {
+
+        s.linkTrackEvents = linkTrackEvents;
+
+      }
+
+      // clone all siteCatalystParams to s object
+
+      for (key in siteCatalystParams) {
+
+        if (siteCatalystParams.hasOwnProperty(key)) {
+
+          s[key] = siteCatalystParams[key];
+
+        }
+
+      }
+
+      // finally send SiteCatalyst tracking request with type and name or their defaults
+
+      if(optFullSet == true){
+         s.t(this, type || 'o', name || 'generic-tracking');
+      }
+      else{
+         s.tl(this, type || 'o', name || 'generic-tracking');
+      }
+
+
+
+
+    }
+
+  }
+
+};
+</script>
+</body>
+</html>
+<!-- cached statically on: 11-11-21 06:46 -->
+<!-- expires on: 11-11-21 08:46 -->
