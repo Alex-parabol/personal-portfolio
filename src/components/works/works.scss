@@ -1,3 +1,98 @@
 .works {
-  background-color: lightgreen;
+  background-color: rgba(224, 255, 255, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .arrow {
+    height: 70px;
+    position: absolute;
+    cursor: pointer;
+
+    &.left {
+      left: 10%;
+      transform: rotateY(180deg);
+    }
+
+    &.right {
+      right: 10%;
+    }
+  }
+
+  .slider {
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease-out;
+
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+
+        .left {
+          flex: 4;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .leftContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            height: 90%;
+
+            .imgContainer {
+              width: 100px;
+              height: 100px;
+              border-radius: 30%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-left: 15%;
+              .img {
+              }
+            }
+            h2 {
+              overflow: hidden;
+              font-size: 1.2em;
+              padding-top: 30px;
+            }
+            p {
+              overflow: hidden;
+              font-size: 0.9em;
+            }
+          }
+        }
+
+        .right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 8;
+          height: 100%;
+
+          img {
+            width: 400px;
+            transform: rotate(-10);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
 }
