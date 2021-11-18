@@ -26,6 +26,10 @@
         flex-direction: row;
         margin-left: 1.8em;
 
+        @include mobile {
+          display: none;
+        }
+
         .icon {
           color: $mainColor;
           font-size: 1.2em;

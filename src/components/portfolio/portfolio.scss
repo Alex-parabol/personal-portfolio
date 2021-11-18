@@ -8,13 +8,22 @@
 
   h1 {
     font-size: 3em;
+
+    @include mobile {
+      font-size: 1.3em;
+    }
   }
 
   ul {
-    margin: 10px;
+    margin: 20px;
     padding: 0;
     list-style: none;
     display: flex;
+    @include mobile {
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   .wrapper {
     width: 70%;
@@ -24,13 +33,17 @@
     flex-wrap: wrap;
   }
   .container {
+    @include mobile {
+      width: 100%;
+    }
     .item {
       display: flex;
-      width: 220px;
-      height: 150px;
+      width: 40vw;
+      height: 45vh;
       border-radius: 20px;
       border: 1px solid rgb(238, 208, 144);
-      margin: 10px 20px;
+      margin: 30px;
+      margin-right: 100px;
       align-items: center;
       justify-content: center;
       color: #fff;
@@ -38,6 +51,11 @@
       overflow: hidden;
       transition: 0.5s ease;
       cursor: pointer;
+
+      @include mobile {
+        width: 90%;
+        height: 60%;
+      }
       h3 {
         position: absolute;
         font-size: 1.3em;
