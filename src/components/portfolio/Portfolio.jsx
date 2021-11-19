@@ -9,27 +9,37 @@ export default function Portfolio() {
         {
             id:'mern',
             title: 'MERNTasks',
-            src: 'assets/MERN.png'
+            src: 'assets/MERN.png',
+            url: 'https://github.com/Alex-parabol/TasksManager',
+            deploy: ''
         },
         {
             id:'crypto',
             title: 'Crypto Exchange',
-            src: 'assets/crypto.jpg'
+            src: 'assets/crypto.jpg',
+            url: 'https://github.com/Alex-parabol/criptocurrency',
+            deploy: 'https://cotizador-cryptos.netlify.app/'
         },
         {
             id:'cocktail',
             title: 'Cocktail-Maker',
-            src: 'assets/coctail.jpg'
+            src: 'assets/coctail.jpg',
+            url: 'https://github.com/Alex-parabol/cocktail-maker',
+            deploy: 'https://cocktail-maker.netlify.app/'
         },
         {
-            id:'news',
-            title: 'News Web',
-            src: 'assets/google-news-t.jpg'
+            id:'songs',
+            title: 'Songs and Lyrics',
+            src: 'assets/music.jpg',
+            url: 'https://github.com/Alex-parabol/lyrics',
+            deploy: 'https://canciones-y-artistas.netlify.app/'
         },
         {
             id:'pixabay',
             title: 'Pixabay Clone',
-            src: 'assets/pixabay.jpg'
+            src: 'assets/pixabay.jpg',
+            url: 'https://github.com/Alex-parabol/pixabay',
+            deploy: 'https://pixabay-test-unit.netlify.app/'
         },
 
     ] 
@@ -48,7 +58,7 @@ export default function Portfolio() {
                 case 'cocktail':
                 setData(projects[2]);
                 break;
-                case 'news':
+                case 'songs':
                 setData(projects[3]);
                 break;
                 case 'pixabay':
@@ -69,6 +79,8 @@ export default function Portfolio() {
                    <PortfolioList
                     title={project.title}
                     id={project.id}
+                    url={project.url}
+                    deploy={project.deploy}
                     active={selected === project.id}
                     setSelected={setSelected}
                     key={project.id}
@@ -80,7 +92,16 @@ export default function Portfolio() {
                     <div className="container">
                     <div className="item">
                         <img src={data.src} alt={data.title} />
-                        <h3>{data.title}</h3>
+                        <a 
+                        className='link code'
+                        href={data.url}
+                        target="_blank" rel="noreferrer"
+                        >My Code</a>
+                        <a 
+                        className='link webpage'
+                        target="_blank" rel="noreferrer"
+                         href={data.deploy}
+                         >Webpage</a>
                     </div>
                 </div>
               

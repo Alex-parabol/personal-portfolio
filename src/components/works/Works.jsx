@@ -11,7 +11,7 @@ export default function Works() {
             id: '1',
             icon: 'assets/front-end-icon.png',
             title: 'Front End Dev',
-            description: 'I use technologies like react, css, scss, styled components, always following BEM and I love looking for the best UI/UX experience',
+            description: 'Most of my experience is with React with context and Redux. I tend to follow BEM convention and Scss for styling. ',
             img: 'assets/frontend.jpg'
         },
         {
@@ -25,7 +25,7 @@ export default function Works() {
             id: '3',
             icon: 'assets/design-icon.png',
             title: 'Design',
-            description: 'Before I begin any of my projects, I try to sketch on places like figma, escalidraw etc.',
+            description: 'Before I begin any of my projects, I try to sketch on places like figma or escalidraw.',
             img: 'assets/web-design-small.jpg'
         }
     ] 

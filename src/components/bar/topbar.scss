@@ -1,8 +1,8 @@
 @import "./../../global.scss";
 
 .topbar {
-  background-color: #fff;
-  color: $mainColor;
+  background-color: $grey;
+  color: $midnight;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -31,7 +31,7 @@
         }
 
         .icon {
-          color: $mainColor;
+          color: $midnight;
           font-size: 1.2em;
           margin-right: 0.4em;
         }
@@ -63,7 +63,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $mainColor;
+          background-color: $midnight;
           transform-origin: left;
           transition: all 2s ease;
         }
@@ -71,20 +71,20 @@
     }
   }
   &.active {
-    background-color: $mainColor;
-    color: #fff;
+    background-color: $midnight;
+    color: $grey;
 
     .hamburguer {
       span {
         &:first-child {
-          background-color: white;
+          background-color: $grey;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          background-color: white;
+          background-color: $grey;
           transform: rotate(-45deg);
         }
       }

@@ -5,22 +5,30 @@
   background-color: white;
   flex-direction: column;
   align-items: center;
-
   h1 {
     font-size: 3em;
+    color: $midnight;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 
     @include mobile {
-      font-size: 1.3em;
+      font-size: 2em;
+      margin-top: 5vh;
+      margin-bottom: 0;
     }
   }
 
   ul {
     margin: 20px;
+    margin-left: 150px;
     padding: 0;
     list-style: none;
     display: flex;
+    color: $midnight;
+    font-size: 1.2em;
     @include mobile {
       margin: 10px 0;
+      margin-top: 10vh;
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -30,7 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; //future proof.
   }
   .container {
     @include mobile {
@@ -55,10 +63,21 @@
       @include mobile {
         width: 90%;
         height: 60%;
+        margin: 0px auto;
+        margin-top: 10vh;
       }
-      h3 {
+      .link {
         position: absolute;
         font-size: 1.3em;
+        color: $white;
+        text-decoration: none;
+      }
+
+      .code {
+        left: 100px;
+      }
+      .webpage {
+        right: 100px;
       }
       img {
         width: 100%;
@@ -67,7 +86,7 @@
         z-index: 1;
       }
       &:hover {
-        background-color: $mainColor;
+        background-color: $midnight;
 
         img {
           opacity: 0.2;

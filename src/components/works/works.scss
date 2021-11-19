@@ -1,5 +1,7 @@
+@import "../../global.scss";
+
 .works {
-  background-color: rgba(224, 255, 255, 0);
+  background-color: $navy;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +11,10 @@
     height: 70px;
     position: absolute;
     cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
 
     &.left {
       left: 10%;
@@ -21,11 +27,17 @@
   }
 
   .slider {
-    height: 350px;
     display: flex;
+    height: 40vh;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+
+    @include mobile {
+      height: 90vh;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .container {
       width: 100vw;
@@ -39,8 +51,14 @@
         justify-content: center;
         width: 700px;
         height: 100%;
-        background-color: white;
+        background-color: $white;
         border-radius: 20px;
+
+        @include mobile {
+          width: 90%;
+          height: 180px;
+          margin: 5px 0;
+        }
 
         .left {
           flex: 4;
@@ -48,6 +66,11 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          @include mobile {
+            flex: 8;
+            height: 90%;
+          }
 
           .leftContainer {
             display: flex;
@@ -63,18 +86,31 @@
               display: flex;
               flex-direction: column;
               justify-content: center;
-              margin-left: 15%;
+              margin-left: 32%;
+
+              @include mobile {
+                display: none;
+              }
               .img {
+                overflow-x: hidden;
+                margin-left: 20px;
               }
             }
             h2 {
               overflow: hidden;
               font-size: 1.2em;
               padding-top: 30px;
+              display: flex;
+              align-self: center;
+              @include mobile {
+                padding: 15px;
+              }
             }
             p {
               overflow: hidden;
               font-size: 0.9em;
+              flex: 2;
+              margin-top: 20px;
             }
           }
         }
@@ -83,13 +119,15 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          flex: 8;
+          flex: 5;
           height: 100%;
 
           img {
-            width: 400px;
-            transform: rotate(-10);
+            width: 350px;
             border-radius: 5px;
+            @include mobile {
+              width: 120px;
+            }
           }
         }
       }

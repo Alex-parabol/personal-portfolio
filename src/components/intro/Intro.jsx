@@ -9,7 +9,7 @@ export default function Intro() {
     init(textRef.current, {
       showCursor: true,
       backDelay: 1000,
-      strings: ['Developer', 'Designer!','Playboy']
+      strings: ['Developer', 'Designer','Programmer']
     })
   }, [])
  

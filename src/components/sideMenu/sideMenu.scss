@@ -3,7 +3,7 @@
 .menu {
   width: 20%;
   height: 100vh;
-  background-color: $mainColor;
+  background-color: $midnight;
   position: fixed;
   top: 0;
   right: -400px; // it hides if not active
@@ -12,6 +12,10 @@
   flex-direction: column;
   justify-content: center;
   transition: all 1s ease;
+
+  @include mobile {
+    width: 200px;
+  }
 
   &.active {
     right: 0;
