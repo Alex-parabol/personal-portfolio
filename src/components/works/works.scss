@@ -108,9 +108,14 @@
             }
             p {
               overflow: hidden;
-              font-size: 0.9em;
+              font-size: 1.1em;
               flex: 2;
-              margin-top: 20px;
+              margin-top: 10px;
+              text-align: center;
+
+              @include mobile {
+                font-size: 0.85em;
+              }
             }
           }
         }
